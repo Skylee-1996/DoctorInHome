@@ -65,6 +65,11 @@ nav .nav-links a.selected{
     color: #303f9f;
 }
 
+nav .nav-links a:hover,
+nav .nav-links a.storeBtn{
+    color: #F94BC5;
+}
+
 .main {
     padding: 0 148px;
     display: flex;
