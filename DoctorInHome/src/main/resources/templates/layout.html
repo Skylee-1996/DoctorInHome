@@ -1,0 +1,46 @@
+
+<html lang="kor" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<th:block th:fragment="setFragment(content)">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Practice</title>
+
+    <link rel="stylesheet" th:href="@{/css/main/style.css}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+
+  <nav>
+    <div class="logo">
+      <a href="#"> <img src="/img/main/dihlogo.png"></a>
+    </div>
+    <div class="nav-links">
+      <a class="selected" href="index.html">Home</a>
+      <a href="/">About Us</a>
+      <a href="/">고객지원</a>
+      <a href="/">AS</a>
+      <a href="/">로그인</a>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <th:block th:replace="${content}"></th:block>
+  </div>
+  <footer>
+    <div class="socials">
+      <i class='bx bxl-facebook-square'></i>
+      <i class='bx bxl-instagram'></i>
+      <i class='bx bxl-twitter'></i>
+      <i class='bx bxl-linkedin-square'></i>
+    </div>
+    <p>Copyright ©2024, All rights reserved.</p>
+  </footer>
+
+
+  </body>
+</th:block>
+
+
+</html>
