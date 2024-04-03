@@ -1,8 +1,97 @@
+<!DOCTYPE html>
 <html lang="kor" xmlns:th="http://www.thymeleaf.org">
 
-
+<th:block th:replace="~{/layout :: setFragment(~{this::content})}">
+    <th:block th:fragment="content">
 <body>
-hello hihi
-</body>
 
+
+<div class="main">
+    <div class="info">
+        <h1>집에서 케어받는 <br>Doctor in Home</h1>
+        <p>소중한 우리 아이의 건강을 지금 Doctor in Home 으로 지켜보세요!</p>
+        <button>지금 바로 다운로드!</button>
+    </div>
+    <img src="/img/main/applogo.png">
+</div>
+
+<div class="recent">
+    <div class="header">
+        <h4>슬라이드 넣을 예정</h4>
+        <a href="blog.html">View all</a>
+    </div>
+    <div class="posts">
+        <div class="post-item">
+            <h3>Making a layout system from scratch</h3>
+            <div class="info">
+                <h5>12 Jan 2024</h5>
+                <h5>|</h5>
+                <h5>Design, Layout</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur porro quaerat provident
+                corporis facere ex voluptatibus laudantium voluptates quos.</p>
+        </div>
+        <div class="post-item">
+            <h3>Making a design system from scratch</h3>
+            <div class="info">
+                <h5>5 Jan 2024</h5>
+                <h5>|</h5>
+                <h5>Design, UI, UX</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur porro quaerat provident
+                corporis facere ex voluptatibus laudantium voluptates quos.</p>
+        </div>
+    </div>
+</div>
+
+<div class="separator">
+    <h4>어플 소개 예정</h4>
+</div>
+
+<div class="featured">
+    <div class="item">
+        <img src="/img/main/appstart1.png">
+        <img src="/img/main/appstart2.png">
+        <img src="/img/main/appstart3.png">
+        <div class="details">
+            <h3>Doctor in Home App</h3>
+            <div class="item-info">
+                <div class="year-badge">app</div>
+                <h4>Doctor in Home</h4>
+            </div>
+            <p>설명 설명 설명 설명</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="/img/main/app1.png">
+        <img src="/img/main/app4.png">
+        <img src="/img/main/app2.png">
+        <div class="details">
+            <h3>우리 아이 케어하기</h3>
+            <div class="item-info">
+                <div class="year-badge">2023</div>
+                <h4>Login Design</h4>
+            </div>
+            <p>설명 설명 설명 설명</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="/img/main/medicine1.png">
+        <img src="/img/main/medicine2.png">
+        <img src="/img/main/medicine3.png">
+        <div class="details">
+            <h3>우리 아이 복약관리</h3>
+            <div class="item-info">
+                <div class="year-badge">2024</div>
+                <h4>UI Design</h4>
+            </div>
+            <p>설명 설명 설명 설명</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+    </th:block>
+</th:block>
 </html>
