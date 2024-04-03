@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Spring Boot Practice</title>
 
+    <link rel="shortcut icon" th:href="@{/img/main/favicon.ico}" type="image/x-icon">
     <link rel="stylesheet" th:href="@{/css/main/style.css}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
@@ -25,9 +26,11 @@
       <a href="/">로그인</a>
     </div>
   </nav>
+
   <div class="container-fluid">
     <th:block th:replace="${content}"></th:block>
   </div>
+
   <footer>
     <div class="socials">
       <i class='bx bxl-facebook-square'></i>

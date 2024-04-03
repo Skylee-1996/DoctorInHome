@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
 
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
+ /* font-family: 'Heebo', sans-serif; */
+    font-family: 'NPSfontBold';
 }
 
 a{
@@ -153,6 +161,8 @@ nav .nav-links a.selected{
     font-weight: 400;
 }
 
+
+
 .recent .posts .post-item p{
     width: 400px;
 }
@@ -171,8 +181,7 @@ nav .nav-links a.selected{
 
 .featured .item,
 .works-list .item{
-    display: flex;
-    gap: 30px;
+    text-align: center;
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid #e0e0e0;
@@ -182,24 +191,33 @@ nav .nav-links a.selected{
 .works-list .item img{
     width: 320px;
     border-radius: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.featured .item .details h3,
+.featured .explain .details{
+    text-align: center;
+    align-items: center;
+}
+
+.featured .explain .details h3,
 .works-list .item h3{
     font-size: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
-.featured .item .details .item-info,
-.works-list .item .details .item-info{
+.featured .explain .details .item-info,
+.works-list .explain .details .item-info{
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-left:15%;
 }
 
-.featured .item .details .item-info .year-badge,
-.works-list .item .details .item-info .year-badge,
+.featured .explain .details .item-info .year-badge,
+.works-list .explain .details .item-info .year-badge,
 .content .work-info .year-badge{
     background-color: #303f9f;
     padding: 2px 14px;
@@ -209,16 +227,16 @@ nav .nav-links a.selected{
     font-weight: bold;
 }
 
-.featured .item .details .item-info h4,
-.works-list .item .details .item-info h4{
+.featured .explain .details .item-info h4,
+.works-list .explain .details .item-info h4{
     color: #8695a4;
     font-size: 18px;
 }
 
-.featured .item .details p,
-.works-list .item .details p{
-    width: 700px;
+.featured .explain .details p,
+.works-list .explain .details p{
     text-align: justify;
+    margin-left:15%;
 }
 
 footer{
@@ -281,7 +299,7 @@ footer p{
 }
 
 .content>img{
-    width: 970px;
+    width: 280px;
     margin: 30px 0;
     border-radius: 20px;
 }
@@ -512,24 +530,24 @@ footer p{
         height: auto;
     }
 
-    .featured .item .details h3,
-    .works-list .details .item h3{
+    .featured .explain .details h3,
+    .works-list .details .explain h3{
         font-size: 24px;
         margin-bottom: 12px;
     }
 
-    .featured .item .details .item-info .year-badge,
-    .works-list .item .details .item-info .year-badge{
+    .featured .explain .details .item-info .year-badge,
+    .works-list .explain .details .item-info .year-badge{
         font-size: 12px;
     }
 
-    .featured .item .details .item-info h4,
-    .works-list .item .details .item-info h4{
+    .featured .explain .details .item-info h4,
+    .works-list .explain .details .item-info h4{
         font-size: 15px;
     }
 
-    .featured .item .details p,
-    .works-list .item .details p{
+    .featured .explain .details p,
+    .works-list .explain .details p{
         font-size: 14px;
     }
 
