@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kor" xmlns:th="http://www.thymeleaf.org">
+
+    <th:block th:replace="~{/layout :: setFragment(~{this::content})}">
+        <th:block th:fragment="content">
+
+<body>
+
+<div class="board-main">
+    <div class="board-title">
+        <h1>공지사항</h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="board-table">
+        <table>
+            <colgroup class="board-table-group">
+                <col style="width: 70px;">
+                <col style="width: auto;">
+                <col style="width: 100px;">
+                <col style="width: 77px;">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>3</td>
+                <td class="content-title"><a href="/board/noti/boardDetail3" class="table-link">제목을 클릭하세요.</a></td>
+                <td class="content-writer">닥터인홈 공식 온라인 스토어</td>
+                <td class="content-date">24.04.04</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="content-title"><a href="/board/noti/boardDetail2" class="table-link">안녕하세요</a></td>
+                <td class="content-writer">닥터인홈 공식 온라인 스토어</td>
+                <td class="content-date">24.04.04</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="content-title"><a href="/board/noti/boardDetail1" class="table-link">공지사항입니다.</a></td>
+                <td class="content-writer">닥터인홈 공식 온라인 스토어</td>
+                <td class="content-date">24.04.04</td>
+            </tr>
+            <tr th:each="board : ${boardDtoList}">
+                <td th:text="${}"></td>
+                <td class="content-title"><a th:href="@{/board/noti/detail(board_id=${board.board_id})}" th:text="${board.board_title}" class="table-link"></a></td>
+                <td th:text="${}" class="content-writer"></td>
+                <td th:text="${}" class="content-date"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content-search">
+        <form action="/board/noti" method="get">
+            <div class="search-form">
+                <select id="search-key" name="search-key">
+                    <option value="title">제목</option>
+                    <option value="content">내용</option>
+                </select>
+                <input type="text" id="keyword" name="keyword" required autocomplete="off">
+                <input type="submit" value="검색">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+        </th:block>
+    </th:block>
+</html>

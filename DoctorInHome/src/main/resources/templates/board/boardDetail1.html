@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kor" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="~{/layout :: setFragment(~{this::content})}">
+    <th:block th:fragment="content">
+
+<body>
+
+<div class="board-main">
+    <div class="board-title">
+        <h1>공지사항</h1>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="content-table">
+        <table>
+            <colgroup class="content-table-group"></colgroup>
+            <tbody>
+                <tr>
+                    <td colspan="2">공지사항입니다.</td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="etcArea">
+                        <div>
+                            <span>닥터인홈 공식 온라인 스토어</span>
+                        </div>
+                        <div>
+                            <span>2024.04.04</span>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+    </th:block>
+</th:block>
+</html>

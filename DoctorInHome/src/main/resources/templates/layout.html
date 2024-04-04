@@ -5,10 +5,11 @@
 <th:block th:fragment="setFragment(content)">
   <head>
     <meta charset="UTF-8">
-    <title>Spring Boot Practice</title>
+    <title>Doctor In Home</title>
 
     <link rel="shortcut icon" th:href="@{/img/main/favicon.ico}" type="image/x-icon">
     <link rel="stylesheet" th:href="@{/css/main/style.css}">
+    <link rel="stylesheet" th:href="@{/css/main/board.css}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
@@ -20,9 +21,17 @@
     </div>
     <div class="nav-links">
       <a class="storeBtn" href="/">스토어</a>
-      <a class="selected" href="index.html">Home</a>
+      <a class="selected" href="/">Home</a>
       <a href="/">About Us</a>
-      <a href="/">고객지원</a>
+      <div class="customer-surpport">
+        <a href="/">고객지원</a>
+        <div class="add-links">
+          <div class="vertical-links">
+            <a href="/board/noti">공지사항</a>
+            <a href="/">Q&A</a>
+          </div>
+        </div>
+      </div>
       <a href="/">AS</a>
       <a href="/">로그인</a>
     </div>

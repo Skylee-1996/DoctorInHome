@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.board-main{
+    padding: 100px 348px;
+}
+
+.board-title{
+    text-align: center;
+}
+
+.board-title h1{
+    padding-bottom: 30px;
+}
+
+.board-table {
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.board-table table{
+    position: relative;
+    margin: 10px 0 0;
+    border-top: 1px solid #8b8989;
+    border-bottom: 1px solid #8b8989;
+    line-height: 1.5;
+}
+
+.board-table thead th{
+    padding: 11px 0 10px;
+    background-color: #fffacd;
+}
+
+.board-table td{
+    /*border-left: 1px solid #d7d5d5;*/
+    border-bottom: 1px solid #d7d5d5;
+    text-align: center;
+    padding: 8px 10px 7px;
+    font-family: NanumSquareNeo-Variable;
+    font-size: 15px;
+}
+
+.table-link{
+    font-family: NanumSquareNeo-Variable;
+}
+
+.table-link:hover{
+    text-decoration: underline;
+}
+
+.board-table .content-title{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.board-table .content-date,
+.board-table .content-writer{
+    font-size: 12px;
+}
+
+.content-search{
+    padding: 20px 0 20px 10px;
+    text-align: center;
+}
+
+select {
+    height: 34px;
+    border: 1px solid #d5d5d5;
+    width: 80px;
+    font-size: 100%
+}
+
+input {
+    height: 34px;
+    border: 1px solid #d5d5d5;
+    font-size: 100%
+}
+
+input[type="text"]{
+    width: 255px;
+}
+
+input[type="submit"]{
+    width: 60px;
+}
+
+.content-table td{
+    font-family: NanumSquareNeo-Variable;
+    font-size: 20px;
+}
+
+.etcArea div{
+    display: inline-block;
+    margin: 0 0 9px;
+    padding: 8px 20px 10px;
+    line-height: 22px;
+    width: 100%
+    vertical-align: top;
+    font-size: 15px;
+}
+
+span {
+    font-family: NanumSquareNeo-Variable;
+}
+
+
+
+
